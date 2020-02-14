@@ -259,7 +259,7 @@ def winning_team
             #   largest = player[:points]
             #   name = player[:player_name]
             # end
-            away_points += player[:points]
+            home_points += player[:points]
           end
         end
       end
