@@ -238,7 +238,7 @@ def most_points_scored
         data.each do |player|
           if num_points_scored(player[:player_name]) > largest
             largest = player[:points]
-            player[:player_name]
+            name = player[:player_name]
           end
         end
       end
