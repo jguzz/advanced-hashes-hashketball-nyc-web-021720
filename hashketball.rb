@@ -303,9 +303,9 @@ def long_name_steals_a_ton?
   longest_name = player_with_longest_name()
   most_points = most_points_scored()
   game_hash.each do |place,team|
-    team.each do |attributes, i|
+    team.each do |attributes, data|
       if attributes == :players
-        i.each do |player|
+        data.each do |player|
           # binding.pry
           if (player[:player_name] == longest_name) && (player[:points] == most_points)
             return true
