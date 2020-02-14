@@ -251,6 +251,7 @@ def winning_team
   away_points = 0
   home_points = 0
   game_hash.each do |place, team|
+    if place == :away
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
