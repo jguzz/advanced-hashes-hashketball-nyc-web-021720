@@ -264,5 +264,7 @@ def winning_team
         end
       end
     end
+
+    if place == :home
   end
 end
