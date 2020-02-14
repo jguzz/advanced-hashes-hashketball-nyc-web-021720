@@ -252,14 +252,15 @@ def winning_team
   home_points = 0
   game_hash.each do |place, team|
     if place == :away
-    team.each do |attribute, data|
-      if attribute == :players
-        data.each do |player|
-          # if num_points_scored(player[:player_name]) > largest
-          #   largest = player[:points]
-          #   name = player[:player_name]
-          # end
-          away_points += player[:points]
+      team.each do |attribute, data|
+        if attribute == :players
+          data.each do |player|
+            # if num_points_scored(player[:player_name]) > largest
+            #   largest = player[:points]
+            #   name = player[:player_name]
+            # end
+            away_points += player[:points]
+          end
         end
       end
     end
