@@ -282,3 +282,20 @@ def winning_team
     return game_hash[:home][:team_name]
   end
 end
+
+def player_with_longest_name
+  longest = 0
+  game_hash.each do |place, team|
+    team.each do |attributes, data|
+      if attributes == :players
+        data.each do |player|
+          if players_name == player[:player_name]
+            new_hash = player.delete_if do |key, val|
+              key == :player_name
+            end
+          end
+        end
+      end
+    end
+  end
+end
