@@ -237,6 +237,7 @@ def most_points_scored
       if attribute == :players
         data.each do |player|
           if num_points_scored(player[:player_name]) > largest
+            largest = player[:score]
             player[:player_name]
           end
         end
