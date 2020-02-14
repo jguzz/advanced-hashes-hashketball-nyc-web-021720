@@ -285,8 +285,6 @@ end
 
 def player_with_longest_name
   longest = 0
-  rebounds = 0
-  new_hash = {}
   game_hash.each do |place, team|
     team.each do |attributes, data|
       if attributes == :players
