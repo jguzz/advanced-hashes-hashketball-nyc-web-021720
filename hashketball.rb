@@ -308,7 +308,7 @@ def long_name_steals_a_ton?
         data.each do |player|
           # binding.pry
           if (player[:player_name] == longest_name) && (player[:points] == most_points)
-
+            return true
           end
         end
       end
