@@ -236,7 +236,7 @@ def most_points_scored
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
-          player[:points]
+          if num_points_scored(player[:name])
         end
       end
     end
