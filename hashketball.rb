@@ -264,6 +264,7 @@ def winning_team
         end
       end
     end
+    #calculate total away points 
     if place == :away
       team.each do |attribute, data|
         if attribute == :players
