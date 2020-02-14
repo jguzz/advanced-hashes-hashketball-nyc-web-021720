@@ -310,7 +310,7 @@ def long_name_steals_a_ton?
           if player[:player_name] == longest_name and most_steals < player[:points]
             steal_a_ton = true
           elsif most_steals < player[:]
-            most_points = player[:points]
+            most_steals = player[:points]
           end
         end
       end
