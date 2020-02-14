@@ -264,7 +264,6 @@ def winning_team
         end
       end
     end
-
     if place == :away
       team.each do |attribute, data|
         if attribute == :players
