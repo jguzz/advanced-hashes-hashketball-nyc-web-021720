@@ -309,7 +309,7 @@ def long_name_steals_a_ton?
         data.each do |player|
           if player[:player_name] == longest_name and most_steals < player[:points]
             steal_a_ton = true
-          elsif most_steals < player[:]
+          elsif most_steals < player[:steals]
             most_steals = player[:points]
           end
         end
