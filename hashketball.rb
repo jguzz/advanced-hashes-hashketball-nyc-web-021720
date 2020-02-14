@@ -231,7 +231,7 @@ end
 
 def most_points_scored
   largest = 0
-  name = 0
+  name = ""
   game_hash.each do |place, team|
     team.each do |attribute, data|
       if attribute == :players
