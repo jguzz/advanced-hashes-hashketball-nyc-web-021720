@@ -307,10 +307,11 @@ def long_name_steals_a_ton?
       if attributes == :players
         data.each do |player|
           if player[:player_name] == longest_name && most_points == player[:points]
-            return "hi"
+            steal_a_ton = true
           end
         end
       end
     end
   end
+  steal_a_ton
 end
