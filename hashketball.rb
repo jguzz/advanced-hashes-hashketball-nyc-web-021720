@@ -248,5 +248,19 @@ def most_points_scored
 end
 
 def winning_team
-
+  away_points = 0
+  home_points = 0
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player|
+          # if num_points_scored(player[:player_name]) > largest
+          #   largest = player[:points]
+          #   name = player[:player_name]
+          # end
+          away_points += player[:points]
+        end
+      end
+    end
+  end
 end
