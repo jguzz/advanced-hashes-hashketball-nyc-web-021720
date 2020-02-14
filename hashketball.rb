@@ -301,7 +301,7 @@ end
 
 def long_name_steals_a_ton?
   longest_name = player_with_longest_name()
-  most_points = 0
+  most_steals = 0
   steal_a_ton = nil
   game_hash.each do |place, team|
     team.each do |attributes, data|
@@ -309,7 +309,7 @@ def long_name_steals_a_ton?
         data.each do |player|
           if player[:player_name] == longest_name and most_points < player[:points]
             steal_a_ton = true
-          else
+          elsif most_points < player[:]
             most_points = player[:points]
           end
         end
